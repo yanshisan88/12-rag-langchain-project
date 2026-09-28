@@ -1,0 +1,44 @@
+[project]
+name = "12-rag-langchain-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anyio>=4.15.1",
+    "asyncpg>=0.31.0",
+    "bcrypt>=5.0.0",
+    "email-validator>=2.3.0",
+    "fastapi[standard]>=0.141.1",
+    "jose>=1.0.0",
+    "langchain>=1.4.0",
+    "langchain-community>=0.4.2",
+    "langchain-deepseek>=1.1.0",
+    "langchain-huggingface>=1.2.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-qdrant>=1.1.0",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph-checkpoint-postgres>=3.1.2",
+    "mcp==1.28.1",
+    "psycopg2-binary>=2.9.13",
+    "pydantic-settings>=2.15.0",
+    "python-jose[cryptography]>=3.5.0",
+    "python-multipart>=0.0.32",
+    "qdrant-client>=1.19.0",
+    "sentence-transformers>=6.0.1",
+    "sqlalchemy>=2.0.52",
+    "sse>=1.2",
+    "sse-starlette>=3.4.11",
+    "starlette>=1.6.0",
+]
+
+[project.scripts]
+12-rag-langchain-project = "12_rag_langchain_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+url="https://pypi.tuna.tsinghua.edu.cn/simple"
+default=true
