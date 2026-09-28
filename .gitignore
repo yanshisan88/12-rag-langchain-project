@@ -5,6 +5,8 @@ build/
 dist/
 wheels/
 *.egg-info
-
+# 环境变量密钥文件
+.env
+.env.local
 # Virtual environments
 .venv
